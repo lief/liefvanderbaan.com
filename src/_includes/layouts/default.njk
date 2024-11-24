@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ pageTitle or siteData.name }}</title>
+    <style>
+      body {
+        box-sizing: border-box;
+        width: clamp(0ch, 100%, 66ch);
+      }
+    </style>
   </head>
   <body>
     {{ content | safe }}
